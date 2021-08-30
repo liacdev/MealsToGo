@@ -9,7 +9,7 @@ export const LocationContextProvider = ({ children }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const onSearch = (searchKeyword = "Antwerp") => {
+  const onSearch = (searchKeyword) => {
     setIsLoading(true);
     setKeyword(searchKeyword);
     if (!searchKeyword) {
@@ -20,7 +20,6 @@ export const LocationContextProvider = ({ children }) => {
       .then((result) => {
         setIsLoading(false);
         setLocation(result);
-        console.log(result);
       })
       .catch((err) => {
         setIsLoading(false);
