@@ -37,7 +37,7 @@ export const RestaurantsScreen = () => {
         </LoadingContainer>
       )}
       <Search />
-      <FlatList
+      <RestaurantList
         data={restaurants}
         renderItem={({ item }) => {
           return (
