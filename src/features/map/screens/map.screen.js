@@ -1,17 +1,17 @@
 import * as React from "react";
+import { View, StyleSheet } from "react-native";
 import MapView from "react-native-maps";
-import { StyleSheet, Dimensions } from "react-native";
-import { SafeArea } from "../../../components/utility/safe-area.component";
+import styled from "styled-components/native";
+import { Search } from "../components/search.component";
+
+const Map = styled(MapView)`
+  height: 100%;
+  width: 100%;
+`;
 
 export const MapScreen = () => (
-  <SafeArea>
-    <MapView style={styles.map} />
-  </SafeArea>
+  <>
+    <Search />
+    <Map />
+  </>
 );
-
-const styles = StyleSheet.create({
-  map: {
-    width: Dimensions.get("window").width,
-    height: Dimensions.get("window").height,
-  },
-});
