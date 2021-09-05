@@ -7,7 +7,7 @@ import {
   AccountContainer,
   AuthButton,
 } from "../components/account.styles";
-
+// Todo make a new branch
 export const AccountScreen = ({ navigation }) => {
   return (
     <AccountBackground>
