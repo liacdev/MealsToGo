@@ -7,7 +7,7 @@ import {
   AccountContainer,
   AuthButton,
 } from "../components/account.styles";
-// Todo make a new branch
+
 export const AccountScreen = ({ navigation }) => {
   return (
     <AccountBackground>
@@ -22,7 +22,7 @@ export const AccountScreen = ({ navigation }) => {
         </AuthButton>
         <Spacer size="large">
           <AuthButton
-            icon="lock-open-outline"
+            icon="email"
             mode="contained"
             onPress={() => navigation.navigate("Register")}
           >
