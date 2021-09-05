@@ -37,7 +37,6 @@ export default function App() {
         .auth()
         .signInWithEmailAndPassword("jago@blacksky.io", "test123")
         .then((user) => {
-          console.log(user);
           setIsAuthenticated(true);
         })
         .catch((e) => {
