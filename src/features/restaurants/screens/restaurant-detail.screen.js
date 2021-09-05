@@ -48,6 +48,7 @@ export const RestaurantDetailScreen = ({ route }) => {
           <List.Item title="Waffle w/ sardine reduction" />
           <List.Item title="Pork soup" />
         </List.Accordion>
+
         <List.Accordion
           title="Drinks"
           left={(props) => <List.Icon {...props} icon="bread-slice" />}
