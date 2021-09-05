@@ -16,7 +16,7 @@ export const AccountScreen = ({ navigation }) => {
         <AuthButton
           icon="lock-open-outline"
           mode="contained"
-          onPress={() => navigation.navigate("login")}
+          onPress={() => navigation.navigate("Login")}
         >
           Login
         </AuthButton>
