@@ -11,7 +11,7 @@ export const locationRequest = (searchTerm) => {
     resolve(locationMock);
   });
 };
-// Todo: Add Google Maps integration
+
 export const locationTransform = (result) => {
   const formattedResponse = camelize(result);
   const { geometry = {} } = formattedResponse.results[0];
